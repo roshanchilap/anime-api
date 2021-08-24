@@ -77,4 +77,7 @@ img{
     position: relative;
     left: 44px;
     }
+    .main{
+        min-height: 842px;
+    }
   }

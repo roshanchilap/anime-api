@@ -26,10 +26,10 @@ searchResults.innerHTML= data.results.map(anime=>{
   <div class="card-body">
     <h2 class="card-title">${anime.title}</h2>
     <p class="card-text">${anime.synopsis}</p>
-    <p class="card-text">${anime.type}</p>
-    <p class="card-text">IMDB rating: ${anime.score}</p>
-    <p class="card-text">Start date: ${new Date(anime.start_date).toDateString()}</p>
-    <p class="card-text">End date: ${new Date(anime.end_date).toDateString()}</p>
+    <p class="card-type">${anime.type}</p>
+    <p class="card-rating">IMDB rating: ${anime.score}</p>
+    <p class="card-sdate">Start date: ${new Date(anime.start_date).toDateString()}</p>
+    <p class="card-edate">End date: ${new Date(anime.end_date).toDateString()}</p>
   </div>
 </div>
     `

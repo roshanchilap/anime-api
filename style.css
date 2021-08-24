@@ -61,3 +61,15 @@ img{
 .result-container{
     margin-top: 60px;
 }
+
+@media screen and (max-width: 600px) {
+    .btn {
+        position: relative;
+        left: 50px;
+    }
+    #search{
+        max-width: 170px !important;
+    position: relative;
+    left: 44px;
+    }
+  }

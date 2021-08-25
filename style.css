@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: lato;
   }
 h1{
     position: absolute;
     top: 0;
     bottom: 0;
     font-family: cursive;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 body {
     background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
@@ -18,17 +18,27 @@ body {
     min-height: 638px;
   }
 .card{
-    background-color: black !important;
-    color: white !important;
-    box-shadow: 5px 10px #a7a6a6;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 1rem;
     width: 273px !important;
+    margin: 20px;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px 2px #a7a6a6;
+    cursor: pointer;
+    transform : scale(1.05);
+  box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.932);
+  transition: all 300ms;
 }
 .btn{
-    background-color: teal;
+    background-color: #9400D3;
     color: white;
     padding: 10px;
     width: 100px;
-    font-weight: bold;
+}
+.sp1{
+    color:#ff5506;
 }
 
 #search:focus {
@@ -54,7 +64,8 @@ body {
 }
 
 img{
-    width: 270px;
+    width: 273px;
+    border-radius: 1rem;
 }
 .card-title{
     text-align: center;
@@ -62,10 +73,24 @@ img{
 .card-body{
     padding: 20px;
 }
-
+.card-text{
+    line-height: 1.5rem;
+    padding: 5px;
+}
 .result-container{
     margin-top: 60px;
 }
+
+.card-type{
+    border: 1px solid rgb(206, 209, 30);
+    padding: 2px;
+    width: auto;
+    border-radius: 5px;
+    text-align: center;
+}
+/* .card-type,.card-rating,.card-sdate,.card-edate{
+    font-weight: bold;
+} */
 
 @media screen and (max-width: 600px) {
     .btn {

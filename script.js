@@ -12,7 +12,11 @@ async function searchAnime(event) {
     showAnime(data);
     resetForm();
   } else if (res.ok == false) {
-    alert("No result found, please try something new !!!");
+    alert(
+      `Sorry 😔 we could not find any result for ${form.get(
+        "search"
+      )}, please try something new !!!`
+    );
     resetForm();
   }
 }

@@ -4,7 +4,7 @@ async function searchAnime(event) {
   event.preventDefault();
   const form = new FormData(this);
   let query = form.get("search");
-  console.log(query)
+  query = "Naruto";
   let res = await fetch(`${api_url}/search/anime?q=${query}&page=1`);
   console.log(res);
   if (res.ok) {

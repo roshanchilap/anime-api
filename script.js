@@ -1,22 +1,9 @@
 const api_url = "https://api.jikan.moe/v3";
-let query = "Naruto";
-  let res = fetch(`${api_url}/search/anime?q=${query}&page=1`);
-  console.log(res);
-  if (res.ok) {
-    const data = res.json();
-    console.log(data);
-    showAnime(data);
-    resetForm();
-  } else if (res.ok == false) {
-    alert(`Sorry 😔 we could not find any result for "${form.get("search")}".`);
-    resetForm();
-  }
 
 async function searchAnime(event) {
   event.preventDefault();
   const form = new FormData(this);
   let query = form.get("search");
-  query = "Naruto";
   let res = await fetch(`${api_url}/search/anime?q=${query}&page=1`);
   console.log(res);
   if (res.ok) {

@@ -1,9 +1,9 @@
 const api_url = "https://api.jikan.moe/v3";
 let query = "Naruto";
-  let res = await fetch(`${api_url}/search/anime?q=${query}&page=1`);
+  let res = fetch(`${api_url}/search/anime?q=${query}&page=1`);
   console.log(res);
   if (res.ok) {
-    const data = await res.json();
+    const data = res.json();
     console.log(data);
     showAnime(data);
     resetForm();
